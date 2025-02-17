@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #ffffff; /* 或你想要的背景色 */
+}
+
+/* 适配状态栏 */
+@supports (-webkit-touch-callout: none) {
+  body {
+    /* iOS safari 适配 */
+    padding-top: env(safe-area-inset-top);
+  }
+} 
